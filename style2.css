@@ -60,14 +60,22 @@ progress::-moz-progress-bar {
 }
 
 .quizBiblico {
-    text-align: center;
-    font-size: 1.7rem;
+    text-align: left;
+    font-size: 1.1rem;
     color: #78350F;
     padding: 0;
     margin: 0 0 0 40px;
     margin-top: 20px; /* Remove qualquer margem superior */
     position: relative; /* Permite posicionamento */
     top: 100px; /* Ajusta o título para a parte superior */
+}
+
+ul {
+    list-style: none;
+}
+
+ul .liA {
+    background-color: #FFF9E0;
 }
 
 .buttonComecarjogar {
