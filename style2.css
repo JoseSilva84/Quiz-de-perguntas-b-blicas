@@ -65,7 +65,7 @@ progress::-moz-progress-bar {
     color: #78350F;
     padding: 0;
     margin: 0 0 0 40px;
-    margin-top: 20px; /* Remove qualquer margem superior */
+    margin-top: 10px; /* Remove qualquer margem superior */
     position: relative; /* Permite posicionamento */
     top: 100px; /* Ajusta o título para a parte superior */
 }
@@ -76,6 +76,53 @@ ul {
 
 ul .liA {
     background-color: #FFF9E0;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: 4px;
+}
+ul .liA:hover {
+    background-color: #78350F;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+ul .liB {
+    background-color: #f6e5a0;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+ul .liB:hover {
+    background-color: #78350F;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+ul .liC {
+    background-color: #FFF9E0;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+ul .liC:hover {
+    background-color: #78350F;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+ul .liD {
+    background-color: #f6e5a0;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+ul .liD:hover {
+    background-color: #78350F;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
 }
 
 .buttonComecarjogar {
