@@ -33,7 +33,7 @@ main {
 .text-simples {
     position: relative;
     color: #78350F;
-    left: -80px;
+    left: -75px;
 }
 
 progress {
@@ -127,7 +127,7 @@ ul .liD:hover {
 
 .buttonComecarjogar {
     display: block;
-    margin: 20px 0 20px 40px;
+    margin: 120px 0 20px 80px;
     padding: 10px 20px;
     font-size: 1.2rem;
     color: #78350F;
@@ -140,6 +140,26 @@ ul .liD:hover {
     align-self: flex-start;
 }
 .buttonComecarjogar:hover {
+    background-color: #78350F;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.buttonProximo {
+    display: block;
+    margin: -75px 0 38px 240px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #78350F;
+    background-color: #ffffff;
+    border: 2px solid #8d4921;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    align-self: flex-start;
+}
+.buttonProximo:hover {
     background-color: #78350F;
     color: #ffffff;
     transition: background-color 0.3s ease;

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "pergunta": "Quem matou Abel?",
+        "A": "Adão",
+        "B": "Caim",
+        "C": "Abraão",
+        "D": "Moisés",
+        "resposta": "B"
+    },
+    {
+        "id": "2",
+        "pergunta": "Nome do primeiro homem?",
+        "A": "Adão",
+        "B": "Noé",
+        "C": "Abraão",
+        "D": "Jesus",
+        "resposta": "A"
+    }
+]

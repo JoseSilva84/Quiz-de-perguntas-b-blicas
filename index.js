@@ -1,19 +1,24 @@
-pergunta1 = {
-    "A": "Adão", 
-    "B": "Caim",
-    "C": "Abraão",
-    "D": "Moisés",
-};
+fetch('./perguntas.json')
+    .then(response => response.json())
+    .then(perguntas => {
+        // Seleciona uma pergunta aleatória
+        const perguntaAleatoria = perguntas[Math.floor(Math.random() * perguntas.length)];
 
-resposta1 = {"B": "Caim"}
-
-pergunta = document.getElementById("pergunta");
-pergunta.innerHTML = `
-    <h1>Quem matou Abel?</h1>
-    <ul>
-        <li></li><br></li>
-        <li class="liA">A - ${pergunta1.A}</li>
-        <li class="liB">B - ${pergunta1.B}</li>
-        <li class="liC">C - ${pergunta1.C}</li>
-        <li class="liD">D - ${pergunta1.D}</li>
-    </ul>`;
+        // Renderiza a pergunta no HTML
+        const textPergunta = document.getElementById("text-pergunta");
+        const pergunta = document.getElementById("pergunta");
+        if (pergunta) {
+            textPergunta.innerHTML = `Pergunta ${perguntaAleatoria.id}`;
+            pergunta.innerHTML = `
+                <h1>${perguntaAleatoria.pergunta}</h1>
+                <ul>
+                    <li class="liA">A - ${perguntaAleatoria.A}</li>
+                    <li class="liB">B - ${perguntaAleatoria.B}</li>
+                    <li class="liC">C - ${perguntaAleatoria.C}</li>
+                    <li class="liD">D - ${perguntaAleatoria.D}</li>
+                </ul>`;
+        } else {
+            console.error("Elemento com ID 'pergunta' não encontrado.");
+        }
+    })
+    .catch(error => console.error("Erro ao carregar o JSON:", error));
