@@ -16,5 +16,23 @@
         "C": "Abraão",
         "D": "Jesus",
         "resposta": "A"
+    },
+    {
+        "id": "3",
+        "pergunta": "Nome da primeira mulher?",
+        "A": "Sara",
+        "B": "Raquel",
+        "C": "Eva",
+        "D": "Lia",
+        "resposta": "C"
+    },
+    {
+        "id": "4",
+        "pergunta": "Menino salvo das águas?",
+        "A": "Arão",
+        "B": "Josué",
+        "C": "Jacó",
+        "D": "Moisés",
+        "resposta": "D"
     }
 ]

@@ -11,7 +11,7 @@
     <main>
         <div class="progress-container">
             <label class="text-simples" id="text-pergunta" for="progress">Pergunta</label>
-            <progress id="progress" value="50" max="100"></progress>
+            <progress id="progress" value="1" max="4"></progress>
             <div class="text-pergunt">
                 <h3>_________________________</h3>
             </div>
@@ -22,7 +22,7 @@
         <div>
             <button class="buttonComecarjogar"  onclick="window.location.href='index.html'">Início</button>
         </div>
-        <button class="buttonProximo"  onclick="window.location.href='index.html'">Próximo</button>
+        <button class="buttonProximo" id="buttonProximo" onclick=botaoProximoPergunta()>Próximo</button>
     </main>
     <script src="index.js"></script>
     <footer>
