@@ -8,6 +8,17 @@ fetch('./perguntas.json')
         mostrarPergunta();
     });
 
+// Adiciona o evento ao botão "Próximo" apenas uma vez
+const botaoProximo = document.getElementById('buttonProximo');
+botaoProximo.onclick = function() {
+    if (perguntaAtual < perguntas.length - 1) {
+        perguntaAtual++;
+        mostrarPergunta();
+        this.disabled = true;
+        this.style.visibility = 'hidden';
+    }
+};
+
 function mostrarPergunta() {
     const progress = document.getElementById("progress");
     progress.value = perguntaAtual + 1;
@@ -20,18 +31,29 @@ function mostrarPergunta() {
     pergunta.innerHTML = `
         <h1>${perguntas[perguntaAtual].pergunta}</h1>
         <ul>
-            <li class="liA">A - ${perguntas[perguntaAtual].A}</li>
-            <li class="liB">B - ${perguntas[perguntaAtual].B}</li>
-            <li class="liC">C - ${perguntas[perguntaAtual].C}</li>
-            <li class="liD">D - ${perguntas[perguntaAtual].D}</li>
+            <li class="alternativa" data-alt="A">A - ${perguntas[perguntaAtual].A}</li>
+            <li class="alternativa" data-alt="B">B - ${perguntas[perguntaAtual].B}</li>
+            <li class="alternativa" data-alt="C">C - ${perguntas[perguntaAtual].C}</li>
+            <li class="alternativa" data-alt="D">D - ${perguntas[perguntaAtual].D}</li>
         </ul>`;
+
+    // Esconde e desabilita o botão "Próximo" até selecionar uma alternativa
+    botaoProximo.disabled = true;
+    botaoProximo.style.visibility = 'hidden';
+
+    document.querySelectorAll('.alternativa').forEach(item => {
+        item.onclick = function() {
+            respostaQuestao(this.getAttribute('data-alt'));
+            botaoProximo.disabled = false;
+            botaoProximo.style.visibility = 'visible';
+        };
+    });
 }
 
-// Exemplo de botão "Próximo"
-document.querySelector('.buttonProximo').onclick = function() {
-    if (perguntaAtual < perguntas.length - 1) {
-        perguntaAtual++;
-        mostrarPergunta();
+function respostaQuestao(selecao) {
+    if (selecao === perguntas[perguntaAtual].resposta) {
+        alert("Você acertou!");
+    } else {
+        alert("Resposta errada");
     }
-};
-
+}

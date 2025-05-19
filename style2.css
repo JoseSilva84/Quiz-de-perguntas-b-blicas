@@ -74,52 +74,14 @@ ul {
     list-style: none;
 }
 
-ul .liA {
-    background-color: #FFF9E0;
-    font-size: 1.7rem;
-    cursor: pointer;
-    padding: 4px;
-}
-ul .liA:hover {
-    background-color: #78350F;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-
-ul .liB {
+ul .alternativa {
     background-color: #f6e5a0;
     font-size: 1.7rem;
     cursor: pointer;
     padding: 4px;
 }
 
-ul .liB:hover {
-    background-color: #78350F;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-
-ul .liC {
-    background-color: #FFF9E0;
-    font-size: 1.7rem;
-    cursor: pointer;
-    padding: 4px;
-}
-
-ul .liC:hover {
-    background-color: #78350F;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-
-ul .liD {
-    background-color: #f6e5a0;
-    font-size: 1.7rem;
-    cursor: pointer;
-    padding: 4px;
-}
-
-ul .liD:hover {
+ul .alternativa:hover {
     background-color: #78350F;
     color: #ffffff;
     transition: background-color 0.3s ease;
@@ -145,7 +107,22 @@ ul .liD:hover {
     transition: background-color 0.3s ease;
 }
 
+.buttonProximo1 {
+    display: block;
+    margin: -75px 0 38px 240px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #878686;
+    border: 2px solid #cececec1;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    align-self: flex-start;
+}
 .buttonProximo {
+    visibility: hidden;
     display: block;
     margin: -75px 0 38px 240px;
     padding: 10px 20px;
