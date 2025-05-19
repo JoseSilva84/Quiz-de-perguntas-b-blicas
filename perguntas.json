@@ -34,5 +34,14 @@
         "C": "Jacó",
         "D": "Moisés",
         "resposta": "D"
+    },
+    {
+        "id": "5",
+        "pergunta": "Onde nasceu Jesus?",
+        "A": "Nazaré",
+        "B": "Jerusalém",
+        "C": "Belém da Judéia",
+        "D": "Jericó",
+        "resposta": "C"
     }
 ]

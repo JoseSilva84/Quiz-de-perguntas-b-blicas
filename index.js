@@ -16,6 +16,14 @@ botaoProximo.onclick = function() {
         mostrarPergunta();
         this.disabled = true;
         this.style.visibility = 'hidden';
+        // Condicionar o botão próximo a última opção
+        if (perguntaAtual === perguntas.length - 1) {
+            botaoProximo.innerHTML = "Finalizar";
+            botaoProximo.onclick = function() {
+                alert("Você finalizou o quiz!");
+                window.location.href = "index.html";
+            };
+        }
     }
 };
 
@@ -40,7 +48,6 @@ function mostrarPergunta() {
     // Esconde e desabilita o botão "Próximo" até selecionar uma alternativa
     botaoProximo.disabled = true;
     botaoProximo.style.visibility = 'hidden';
-
     document.querySelectorAll('.alternativa').forEach(item => {
         item.onclick = function() {
             respostaQuestao(this.getAttribute('data-alt'));
