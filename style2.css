@@ -67,7 +67,7 @@ progress::-moz-progress-bar {
     margin: 0 0 0 40px;
     margin-top: 10px; /* Remove qualquer margem superior */
     position: relative; /* Permite posicionamento */
-    top: 100px; /* Ajusta o título para a parte superior */
+    top: 80px; /* Ajusta o título para a parte superior */
 }
 
 ul {
@@ -79,6 +79,8 @@ ul .alternativa {
     font-size: 1.7rem;
     cursor: pointer;
     padding: 4px;
+    margin: 3px 10px 10px 3px;
+    margin-right: 40px;
 }
 
 ul .alternativa:hover {
@@ -89,7 +91,7 @@ ul .alternativa:hover {
 
 .buttonComecarjogar {
     display: block;
-    margin: 120px 0 20px 80px;
+    margin: 77px 0 20px 80px;
     padding: 10px 20px;
     font-size: 1.2rem;
     color: #78350F;
@@ -124,7 +126,7 @@ ul .alternativa:hover {
 .buttonProximo {
     visibility: hidden;
     display: block;
-    margin: -75px 0 38px 240px;
+    margin: -67px 0 38px 240px;
     padding: 10px 20px;
     font-size: 1.2rem;
     color: #78350F;

@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "pergunta": "Quem matou Abel?",
+        "pergunta": "Qual o nome de quem foi matou Abel?",
         "A": "Adão",
         "B": "Caim",
         "C": "Abraão",
@@ -10,7 +10,7 @@
     },
     {
         "id": "2",
-        "pergunta": "Nome do primeiro homem?",
+        "pergunta": "Qual foi o nome do primeiro homem?",
         "A": "Adão",
         "B": "Noé",
         "C": "Abraão",
@@ -19,7 +19,7 @@
     },
     {
         "id": "3",
-        "pergunta": "Nome da primeira mulher?",
+        "pergunta": "Qual nome foi dado a primeira mulher?",
         "A": "Sara",
         "B": "Raquel",
         "C": "Eva",
@@ -28,7 +28,7 @@
     },
     {
         "id": "4",
-        "pergunta": "Menino salvo das águas?",
+        "pergunta": "Que menino foi salvo das águas?",
         "A": "Arão",
         "B": "Josué",
         "C": "Jacó",
@@ -37,11 +37,56 @@
     },
     {
         "id": "5",
-        "pergunta": "Onde nasceu Jesus?",
+        "pergunta": "Em que lugar nasceu Jesus, o Salvador?",
         "A": "Nazaré",
         "B": "Jerusalém",
         "C": "Belém da Judéia",
         "D": "Jericó",
         "resposta": "C"
+    },
+    {
+        "id": "6",
+        "pergunta": "Quantas pragas foram enviadas ao Egito?",
+        "A": "7",
+        "B": "11",
+        "C": "14",
+        "D": "10",
+        "resposta": "D"
+    },
+    {
+        "id": "7",
+        "pergunta": "Quantos livros tem a Bíblia no seu todo?",
+        "A": "66",
+        "B": "72",
+        "C": "54",
+        "D": "40",
+        "resposta": "A"
+    },
+    {
+        "id": "8",
+        "pergunta": "Qual instrumento Davi gostava de tocar?",
+        "A": "Tambor",
+        "B": "Harpa",
+        "C": "Flauta",
+        "D": "Shofar",
+        "resposta": "B"
+    },
+    {
+        "id": "9",
+        "pergunta": "Quando Jesus nasceu, onde foi colocado?",
+        "A": "Trono",
+        "B": "Cama",
+        "C": "Berço",
+        "D": "Manjedoura",
+        "resposta": "D"
+    },
+    {
+        "id": "10",
+        "pergunta": "Jesus comparou o Reino de Deus a qual semente?",
+        "A": "Milho",
+        "B": "Cevada",
+        "C": "Uva",
+        "D": "Mostarda",
+        "resposta": "D"
     }
 ]
