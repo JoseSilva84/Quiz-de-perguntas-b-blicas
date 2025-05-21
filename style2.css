@@ -33,7 +33,7 @@ main {
 .text-simples {
     position: relative;
     color: #78350F;
-    left: -75px;
+    left: -45px;
 }
 
 progress {
@@ -57,6 +57,16 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     background-color: #C86E09;
     border-radius: 3px;
+}
+
+.text-pergunt {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    position: relative;
+    color: #78350F;
+    left: 110px;
+    margin-top: 10px;
 }
 
 .quizBiblico {

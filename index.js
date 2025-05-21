@@ -1,5 +1,9 @@
 let perguntas = [];
 let perguntaAtual = 0;
+let acertos = [];
+let erros = [];
+let selecao = null;
+let pontuacao = 0;
 
 fetch('./perguntas.json')
     .then(response => response.json())
@@ -19,24 +23,36 @@ function embaralharArray(array) {
 
 // Adiciona o evento ao botão "Próximo" apenas uma vez
 const botaoProximo = document.getElementById('buttonProximo');
+const resultadoAcertos = document.getElementById('acertos');
+const resultadoErros = document.getElementById('erros');
+
 botaoProximo.onclick = function() {
+    if (selecao === perguntas[perguntaAtual].resposta) {
+        pontuacao++;
+        acertos.push(perguntaAtual);
+        resultadoAcertos.innerHTML = `Acertos: ${acertos.length}`;
+    } else {
+        erros.push(perguntaAtual);
+        resultadoErros.innerHTML = `Erros: ${erros.length}`;
+    }
+
     if (perguntaAtual < perguntas.length - 1) {
         perguntaAtual++;
         mostrarPergunta();
         this.disabled = true;
         this.style.visibility = 'hidden';
-        // Condicionar o botão próximo a última opção
         if (perguntaAtual === perguntas.length - 1) {
             botaoProximo.innerHTML = "Finalizar";
-            botaoProximo.onclick = function() {
-                alert("Você finalizou o quiz!");
-                window.location.href = "index.html";
-            };
         }
+    } else {
+        alert("Você finalizou o quiz!");
+        window.location.href = "index.html";
     }
 };
 
 function mostrarPergunta() {
+    selecao = null; // Limpa a seleção ao mostrar nova pergunta
+
     const progress = document.getElementById("progress");
     progress.value = perguntaAtual + 1;
     progress.max = perguntas.length;
@@ -57,19 +73,12 @@ function mostrarPergunta() {
     // Esconde e desabilita o botão "Próximo" até selecionar uma alternativa
     botaoProximo.disabled = true;
     botaoProximo.style.visibility = 'hidden';
+
     document.querySelectorAll('.alternativa').forEach(item => {
         item.onclick = function() {
-            respostaQuestao(this.getAttribute('data-alt'));
+            selecao = this.getAttribute('data-alt');
             botaoProximo.disabled = false;
             botaoProximo.style.visibility = 'visible';
         };
     });
-}
-
-function respostaQuestao(selecao) {
-    if (selecao === perguntas[perguntaAtual].resposta) {
-        alert("Você acertou!");
-    } else {
-        alert("Resposta errada");
-    }
 }
