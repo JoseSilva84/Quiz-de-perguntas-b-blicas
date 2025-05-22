@@ -161,3 +161,40 @@ footer {
     margin-top: 20px;
     width: 100%;
 }
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 700px) {
+    main {
+        width: 98vw;
+        max-width: 100vw;
+        min-height: 80vh;
+        padding: 1rem 0.5rem;
+    }
+    .progress-container {
+        margin: 20px 0 0 0;
+    }
+    .text-pergunt {
+        gap: 10px;
+        left: 0;
+        font-size: 1rem;
+    }
+    .quizBiblico {
+        font-size: 1rem;
+        margin-left: 0;
+        top: 0;
+    }
+    ul .alternativa {
+        font-size: 1rem;
+        padding: 6px;
+    }
+    .buttonComecarjogar,
+    .buttonProximo1,
+    .buttonProximo {
+        font-size: 1rem;
+        padding: 8px 12px;
+        margin: 15px auto 0 auto;
+    }
+    footer {
+        font-size: 0.9rem;
+    }
+}

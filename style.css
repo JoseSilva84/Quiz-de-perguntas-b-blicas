@@ -13,55 +13,58 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
-    width: 70vh;
+    height: auto;
+    min-height: 60vh;
+    width: 90vw;
+    max-width: 500px;
     background-color: #FFFFFF;
     position: relative;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1rem;
 }
-
 
 .quiz-icones {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #78350F;
     padding: 0;
-    margin-top: 0; /* Remove qualquer margem superior */
-    position: relative; /* Permite posicionamento */
-    top: -2px; /* Ajusta o título para a parte superior */
-    gap: 40px;
+    margin-top: 0;
+    position: relative;
+    top: -2px;
+    gap: 30px;
 }
 
 .quizBiblico {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #78350F;
     padding: 0;
-    margin-top: 0; /* Remove qualquer margem superior */
-    position: relative; /* Permite posicionamento */
-    top: -40px; /* Ajusta o título para a parte superior */
+    margin-top: 0;
+    position: relative;
+    top: -30px;
 }
 
 .textoPequeno {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #C86E09;
     padding: 0;
     margin-top: 0;
     position: relative;
-    top: -35px;
+    top: -25px;
 }
+
 .buttonComecarjogar {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #FFFFFF;
     background-color: #C86E09;
     border: none;
@@ -77,26 +80,65 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.container-icones{
+.container-icones {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-top: 70px;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
-.div-conquista, .div-ranking{
+.div-conquista, .div-ranking {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #78350F;
 }
 
 footer {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #78350F;
     margin-top: 20px;
     width: 100%;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 600px) {
+    main {
+        width: 98vw;
+        max-width: 100vw;
+        min-height: 80vh;
+        padding: 1rem 0.5rem;
+    }
+    .quiz-icones {
+        font-size: 1.5rem;
+        gap: 15px;
+    }
+    .quizBiblico {
+        font-size: 1.3rem;
+        top: -10px;
+    }
+    .textoPequeno {
+        font-size: 0.9rem;
+        top: -10px;
+    }
+    .container-icones {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    .div-conquista, .div-ranking {
+        font-size: 0.9rem;
+    }
+    .buttonComecarjogar {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+        top: 10px;
+    }
+    footer {
+        font-size: 0.9rem;
+    }
 }
