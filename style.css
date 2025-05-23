@@ -106,7 +106,7 @@ footer {
 }
 
 /* Responsividade para tablets e celulares */
-@media (max-width: 300px) {
+@media (max-width: 600px) {
     main {
         width: 98vw;
         max-width: 100vw;
@@ -119,11 +119,11 @@ footer {
     }
     .quizBiblico {
         font-size: 1.3rem;
-        top: -40px;
+        top: -10px;
     }
     .textoPequeno {
         font-size: 0.9rem;
-        top: -40px;
+        top: -10px;
     }
     .container-icones {
         flex-direction: column;
@@ -140,5 +140,41 @@ footer {
     }
     footer {
         font-size: 0.9rem;
+    }
+}
+
+/* Responsividade para celulares muito pequenos até 300px */
+@media (max-width: 300px) {
+    main {
+        width: 100vw;
+        min-height: 90vh;
+        padding: 0.5rem 0.2rem;
+    }
+    .quiz-icones {
+        font-size: 1rem;
+        gap: 5px;
+    }
+    .quizBiblico {
+        font-size: 0.9rem;
+        top: -10px;
+    }
+    .textoPequeno {
+        font-size: 0.7rem;
+        top: -10px;
+    }
+    .container-icones {
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .div-conquista, .div-ranking {
+        font-size: 0.7rem;
+    }
+    .buttonComecarjogar {
+        font-size: 0.7rem;
+        padding: 5px 6px;
+        top: 2px;
+    }
+    footer {
+        font-size: 0.7rem;
     }
 }
