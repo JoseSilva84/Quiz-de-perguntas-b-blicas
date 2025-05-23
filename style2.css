@@ -242,8 +242,8 @@ footer {
 @media (max-width: 300px) {
     main {
         width: 100vw;
-        min-height: 90vh;
-        padding: 0.3rem 0.1rem;
+        min-height: 60vh;
+        padding: 0.1rem 0.1rem;
     }
     .progress-container {
         margin: 8px 0 0 0;
