@@ -1,4 +1,166 @@
-/* ...código base permanece igual... */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF9E0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 60vh;
+    width: 70vh;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.progress-container {
+    text-align: center;
+    margin: 80px 0 0 30px;
+    position: absolute;
+    top: -70px;
+}
+
+.text-simples {
+    position: relative;
+    color: #78350F;
+    left: -45px;
+}
+
+progress {
+    width: 190%;
+    height: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 3px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #C86E09;
+    border-radius: 3px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #C86E09;
+    border-radius: 3px;
+}
+
+.text-pergunt {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    position: relative;
+    color: #78350F;
+    left: 110px;
+    margin-top: 10px;
+}
+
+.quizBiblico {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #78350F;
+    padding: 0;
+    margin: 0 0 0 40px;
+    margin-top: 10px;
+    position: relative;
+    top: 80px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul .alternativa {
+    background-color: #f6e5a0;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: 4px;
+    margin: 3px 10px 10px 3px;
+    margin-right: 40px;
+}
+
+ul .alternativa:hover {
+    background-color: #78350F;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.buttonComecarjogar {
+    display: block;
+    margin: 77px 0 20px 80px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #78350F;
+    background-color: #ffffff;
+    border: 2px solid #8d4921;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    align-self: flex-start;
+}
+.buttonComecarjogar:hover {
+    background-color: #78350F;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.buttonProximo1 {
+    display: block;
+    margin: -75px 0 38px 240px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #878686;
+    border: 2px solid #cececec1;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    align-self: flex-start;
+}
+.buttonProximo {
+    visibility: hidden;
+    display: block;
+    margin: -67px 0 38px 240px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #78350F;
+    background-color: #ffffff;
+    border: 2px solid #8d4921;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    align-self: flex-start;
+}
+.buttonProximo:hover {
+    background-color: #78350F;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #78350F;
+    margin-top: 20px;
+    width: 100%;
+}
 
 /* Responsividade para tablets e celulares até 700px */
 @media (max-width: 700px) {
